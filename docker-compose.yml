@@ -1,0 +1,11 @@
+version: "2"
+# Prerender is not meant to run on swarm mode, thus 2.x version (as swarm mode is not supporting
+# kernel capabilities as of now), it will be deployed separately to Amazon ECS though and used for every project
+
+services:
+  prerender:
+    image: heathmont/prerender-chrome:5.0.0
+    ports:
+      - 80:3000/tcp
+    cap_add:
+      - SYS_ADMIN

@@ -1,4 +1,4 @@
-Prerender Service [![Stories in Ready](https://badge.waffle.io/prerender/prerender.png?label=ready&title=Ready)](https://waffle.io/prerender/prerender)
+Prerender Service
 ===========================
 
 Google, Facebook, Twitter, Yahoo, and Bing are constantly trying to view your website... but they don't execute javascript. That's why we built Prerender. Prerender is perfect for AngularJS SEO, BackboneJS SEO, EmberJS SEO, and any other javascript framework.
@@ -13,7 +13,8 @@ Prerender adheres to google's `_escaped_fragment_` proposal, which we recommend 
 - That's it! Perfect SEO on javascript pages.
 
 ## Running in docker
-`docker run -d --name prerender_chrome -p 3000:3000 --shm-size=1024m --cap-add=SYS_ADMIN heathmont/prerender-chrome:5.0.0`
+* `docker run -d --name prerender_chrome -p 3000:3000 --shm-size=1024m --cap-add=SYS_ADMIN heathmont/prerender-chrome:5.0.0`
+* or `docker-compose up`
 
 
 ### <a id='middleware'></a>
