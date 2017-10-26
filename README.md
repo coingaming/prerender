@@ -12,6 +12,9 @@ Prerender adheres to google's `_escaped_fragment_` proposal, which we recommend 
 - If you use hash urls (#), change them to the hash-bang (#!)
 - That's it! Perfect SEO on javascript pages.
 
+## Running in docker
+`docker run -d --name prerender_chrome -p 3000:3000 --shm-size=1024m --cap-add=SYS_ADMIN heathmont/prerender-chrome:5.0.0`
+
 
 ### <a id='middleware'></a>
 ## Middleware
