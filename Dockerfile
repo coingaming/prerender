@@ -15,16 +15,6 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
   && rm /etc/apt/sources.list.d/google-chrome.list \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
-
-RUN useradd headless --shell /bin/bash --create-home \
-  && usermod -a -G sudo headless \
-  && echo 'ALL ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers \
-  && echo 'headless:nopassword' | chpasswd
-
-RUN mkdir /data && chown -R headless:headless /data
-
-
-
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
@@ -33,8 +23,6 @@ ENV NODE_ENV $NODE_ENV
 COPY package.json /usr/src/app/
 RUN npm install --production && npm cache clean --force
 COPY . /usr/src/app
-RUN chown -R headless:headless /usr/src/app
 
-USER headless
 
 CMD [ "npm", "start" ]

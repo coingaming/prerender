@@ -4,9 +4,11 @@ version: "2"
 
 services:
   prerender:
-    image: heathmont/prerender-chrome:5.0.1
+    image: heathmont/prerender-chrome:5.0.2
     ports:
-      - 80:3000/tcp
+      - 80:80/tcp
+    environment:
+      PORT: "80"
     cap_add:
       - SYS_ADMIN
     labels:
