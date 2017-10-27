@@ -10,6 +10,6 @@ services:
     cap_add:
       - SYS_ADMIN
     labels:
-      ops.ecs_desired_count: 1
+      ops.ecs_desired_count: "1"
       ops.health_check_path: "/status"
-      ops.ecs_lb_scheme: internet-facing
+      ops.ecs_lb_scheme: "internet-facing"
