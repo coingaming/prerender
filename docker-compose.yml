@@ -4,7 +4,7 @@ version: "2"
 
 services:
   prerender:
-    image: heathmont/prerender-chrome:5.0.0
+    image: heathmont/prerender-chrome:5.0.1
     ports:
       - 80:3000/tcp
     cap_add:
