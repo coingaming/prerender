@@ -9,3 +9,7 @@ services:
       - 80:3000/tcp
     cap_add:
       - SYS_ADMIN
+    labels:
+      ops.ecs_desired_count: 1
+      ops.health_check_path: "/https://bitcasino.io/"
+      ops.ecs_lb_scheme: internet-facing
