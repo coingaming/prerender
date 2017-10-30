@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var prerender = require('./lib');
+const prerender = require('./lib');
 
 const chromeFlags = ['--headless', '--disable-gpu', '--remote-debugging-port=9222'];
 if (process.geteuid && process.geteuid() === 0) {
@@ -7,7 +7,7 @@ if (process.geteuid && process.geteuid() === 0) {
 }
 const options = { chromeFlags };
 
-var server = prerender(options);
+const server = prerender(options);
 
 server.use(prerender.sendPrerenderHeader());
 server.use(prerender.blockResources());

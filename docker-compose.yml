@@ -9,6 +9,7 @@ services:
       - 80:80/tcp
     environment:
       PORT: "80"
+      LOG_REQUESTS: "1"
     cap_add:
       - SYS_ADMIN
     labels:
