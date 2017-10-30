@@ -13,5 +13,5 @@ services:
       - SYS_ADMIN
     labels:
       ops.ecs_desired_count: "1"
-      ops.health_check_path: "/status"
+      ops.health_check_path: "/https://bitcasino.io"
       ops.ecs_lb_scheme: "internet-facing"
