@@ -10,6 +10,7 @@ const options = { chromeFlags };
 const server = prerender(options);
 
 server.use(prerender.sendPrerenderHeader());
+server.use(prerender.inMemoryHtmlCache());
 server.use(prerender.blockResources());
 server.use(prerender.removeScriptTags());
 server.use(prerender.httpHeaders());
