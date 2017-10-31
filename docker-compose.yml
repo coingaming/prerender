@@ -10,7 +10,7 @@ services:
     environment:
       PORT: "80"
       LOG_REQUESTS: "1"
-      BLOCKED_RESOURCES_DOMAINS: "asset.games-assets.xyz,elecgames-static.casinomodule.com,quickfire3.gameassists.co.uk,radar.cedexis.com,mob3.gcontent.eu,api.gameassists.co.uk,prod.onetouch.io,lobby-mbet.betsoftgaming.com,demo.endorphina.network,d22qnm33zunn5d.cloudfront.net,ga1.game-program.com"
+      BLOCKED_RESOURCES_DOMAINS: "asset.games-assets.xyz,elecgames-static.casinomodule.com,quickfire3.gameassists.co.uk,radar.cedexis.com,mob3.gcontent.eu,api.gameassists.co.uk,prod.onetouch.io,lobby-mbet.betsoftgaming.com,demo.endorphina.network,d22qnm33zunn5d.cloudfront.net,ga1.game-program.com,caocw.playngonetwork.com,caodemo.playngonetwork.com"
     cap_add:
       - SYS_ADMIN
     labels:
