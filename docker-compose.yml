@@ -4,7 +4,7 @@ version: "2"
 
 services:
   prerender:
-    image: heathmont/prerender-chrome:5.0.7
+    image: heathmont/prerender-chrome:5.0.8
     ports:
       - 80:80/tcp
     environment:
