@@ -10,6 +10,7 @@ services:
     environment:
       PORT: "80"
       LOG_REQUESTS: "1"
+      BLOCKED_RESOURCES_DOMAINS: "asset.games-assets.xyz,elecgames-static.casinomodule.com,quickfire3.gameassists.co.uk,radar.cedexis.com,mob3.gcontent.eu,api.gameassists.co.uk,prod.onetouch.io,lobby-mbet.betsoftgaming.com"
     cap_add:
       - SYS_ADMIN
     labels:
