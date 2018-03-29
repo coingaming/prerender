@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "cache-manager": "2.5.0",
-    "chrome-remote-interface": "0.25.2",
+    "chrome-remote-interface": "0.25.5",
     "he": "1.1.1",
     "valid-url": "1.0.9",
     "minimatch": "3.0.4"
